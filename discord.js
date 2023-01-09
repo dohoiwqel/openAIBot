@@ -138,7 +138,7 @@ async function main(){
             while(true){
                 const rn = randInt(0, messageCount-1)
                 const messageAutor = messageArray[rn].author.id
-                if(messageAutor === discordUserId && !answeredQuestion.includes(messageArray[rn].content)){
+                if(messageAutor !== discordUserId && !answeredQuestion.includes(messageArray[rn].content)){
                     return [
                         messageArray[rn].content,
                         {
