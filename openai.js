@@ -27,7 +27,7 @@ async function openAI(message){
         {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': openAIauth
+                'Authorization': "Bearer " + openAIauth
             }
         }
     );
